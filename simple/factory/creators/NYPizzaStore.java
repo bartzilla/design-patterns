@@ -21,7 +21,6 @@ public class NYPizzaStore extends PizzaStore {
             pizza = new ClamPizza(pizzaIngredientFactory);
             pizza.setName("New York Style Clam Pizza");
         }
-
         return pizza;
     }
 }
