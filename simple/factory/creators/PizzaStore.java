@@ -1,6 +1,6 @@
 package simple.factory.creators;
 
-import simple.factory.products.Pizza;
+import simple.factory.pizza.Pizza;
 
 public abstract class PizzaStore {
     public Pizza orderPizza(String type) {
