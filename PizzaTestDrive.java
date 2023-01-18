@@ -13,6 +13,5 @@ public class PizzaTestDrive {
 
         final Pizza joelCheesePizza = chicagoPizzaStore.orderPizza("cheese");
         System.out.println("Joel ordered a " + joelCheesePizza.getName() + "\n");
-
     }
 }
