@@ -1,4 +1,4 @@
-package simple.factory.products;
+package factory.method.products;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +24,7 @@ public abstract class Pizza {
     public void cut() {
 
     }
-   public  void box() {
+    public  void box() {
 
     }
     public String getName() {

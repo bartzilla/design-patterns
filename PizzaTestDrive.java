@@ -1,6 +1,6 @@
-import simple.factory.creators.ChicagoPizzaStore;
-import simple.factory.creators.NYPizzaStore;
-import simple.factory.products.Pizza;
+import factory.method.creators.ChicagoPizzaStore;
+import factory.method.creators.NYPizzaStore;
+import factory.method.products.Pizza;
 
 public class PizzaTestDrive {
 

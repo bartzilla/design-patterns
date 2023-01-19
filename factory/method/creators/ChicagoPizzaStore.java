@@ -1,8 +1,7 @@
-package simple.factory.creators;
+package factory.method.creators;
 
-import simple.factory.products.ChicagoStyleCheesePizza;
-import simple.factory.products.NYStyleCheesePizza;
-import simple.factory.products.Pizza;
+import factory.method.products.ChicagoStyleCheesePizza;
+import factory.method.products.Pizza;
 
 public class ChicagoPizzaStore extends PizzaStore {
     @Override

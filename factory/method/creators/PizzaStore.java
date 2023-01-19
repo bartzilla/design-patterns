@@ -1,10 +1,10 @@
-package simple.factory.creators;
+package factory.method.creators;
 
-import simple.factory.products.Pizza;
+import factory.method.products.Pizza;
 
 public abstract class PizzaStore {
     public Pizza orderPizza(String type) {
-        Pizza pizza = createPizza(type);;
+        Pizza pizza = createPizza(type);
 
         pizza.prepare();
         pizza.bake();
