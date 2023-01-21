@@ -1,21 +1,24 @@
-import creator.ArtDecoFactory;
-import creator.FurnitureFactory;
-import creator.ModernFactory;
-import creator.VictorianFactory;
-import enumarator.ProductEnum;
+import creator.chair.ArtDecoChairFactory;
+import creator.chair.ChairFactory;
+import creator.chair.VictorianChairFactory;
+import enumarator.Type;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class FactoryMethodTest {
     public static void main(String[] args) {
 
         System.out.println("----------- Welcome to Furniture Factory Method -----------\n");
 
-        final FurnitureFactory artDecoFactory = new ArtDecoFactory();
-        final FurnitureFactory victorianFactory = new VictorianFactory();
-        final ModernFactory modernFactory = new ModernFactory();
+        final ArrayList<ChairFactory> chairFactories = new ArrayList<>();
+        chairFactories.add(new ArtDecoChairFactory());
+        chairFactories.add(new VictorianChairFactory());
 
-        artDecoFactory.orderFurniture(ProductEnum.SOFA);
-        victorianFactory.orderFurniture(ProductEnum.SOFA);
-        modernFactory.orderFurniture(ProductEnum.SOFA);
+        final ChairFactory artDecoChairFactory = new ArtDecoChairFactory();
+        Arrays.asList(Type.values()).forEach(artDecoChairFactory::orderChair);
 
+        final ChairFactory victorianChairFactory = new VictorianChairFactory();
+        Arrays.asList(Type.values()).forEach(victorianChairFactory::orderChair);
     }
 }
