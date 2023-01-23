@@ -1,4 +1,6 @@
-package product;
+package product.windows.button;
+
+import product.Button;
 
 public class WindowsButton implements Button {
 

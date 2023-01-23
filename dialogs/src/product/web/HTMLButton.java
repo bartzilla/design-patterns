@@ -1,4 +1,6 @@
-package product;
+package product.web;
+
+import product.Button;
 
 public class HTMLButton implements Button {
     @Override

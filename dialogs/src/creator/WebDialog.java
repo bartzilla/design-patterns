@@ -1,11 +1,11 @@
 package creator;
 
-import product.WindowsButton;
+import product.windows.button.WindowsButton;
 import product.Button;
 
 public class WebDialog extends Dialog {
     @Override
-    Button createButton() {
+    public Button createButton() {
         return new WindowsButton();
     }
 }
